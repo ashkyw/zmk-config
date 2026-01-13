@@ -264,7 +264,95 @@
 		 <&macro_tap &kp N5>
          ;
       };
-};
+                tlm_r: macro_13
+      {
+         compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
+         bindings =
+         <&macro_press &kp LGUI>,
+         <&macro_press &kp LALT>,
+		 <&macro_tap &kp RIGHT_ARROW>,
+         <&macro_release &kp LGUI>,
+         <&macro_release &kp LALT>
+         ;
+      };
+                tlm_l: macro_14
+      {
+         compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
+         bindings =
+         <&macro_press &kp LGUI>,
+         <&macro_press &kp LALT>,
+		 <&macro_tap &kp LEFT_ARROW>,
+         <&macro_release &kp LGUI>,
+         <&macro_release &kp LALT>
+         ;
+      };
+                tlm_u: macro_15
+      {
+         compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
+         bindings =
+         <&macro_press &kp LGUI>,
+         <&macro_press &kp LALT>,
+		 <&macro_tap &kp UP_ARROW>,
+         <&macro_release &kp LGUI>,
+         <&macro_release &kp LALT>
+       ;
+      };
+                tlm_d: macro_16
+      {
+         compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
+         bindings =
+         <&macro_press &kp LGUI>,
+         <&macro_press &kp LALT>,
+		 <&macro_tap &kp DOWN_ARROW>,
+         <&macro_release &kp LGUI>,
+         <&macro_release &kp LALT>
+       ;
+      };
+                whim_right: macro_17
+      {
+         compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
+         bindings =
+         <&macro_press &kp LGUI>,
+         <&macro_tap &kp RIGHT_ARROW>,
+         <&macro_release &kp LGUI>
+       ;
+      };
+                whim_left: macro_18
+      {
+         compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
+         bindings =
+         <&macro_press &kp LGUI>,
+         <&macro_tap &kp LEFT_ARROW>,
+         <&macro_release &kp LGUI>
+       ;
+      };
+                whim_up: macro_19
+      {
+         compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
+         bindings =
+         <&macro_press &kp LGUI>,
+         <&macro_tap &kp UP_ARROW>,
+         <&macro_release &kp LGUI>
+       ;
+      };
+                whim_down: macro_20
+      {
+         compatible = "zmk,behavior-macro";
+         #binding-cells = <0>;
+         bindings =
+         <&macro_press &kp LGUI>,
+         <&macro_tap &kp DOWN_ARROW>,
+         <&macro_release &kp LGUI>
+       ;
+      };
+    };
 
    keymap
    {
@@ -352,9 +440,9 @@
          bindings =
          <
    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &trans  &trans  &trans  &trans  &trans  &ext_power EP_TOG
-   &trans      &trans        &trans      &trans        &trans        &out OUT_USB                       &trans  &trans  &trans  &trans  &trans  &trans
-   &trans      &trans        &trans      &trans        &trans        &out OUT_BLE                       &trans  &trans  &trans  &trans  &trans  &trans
-   &trans      &trans        &trans      &trans        &trans        &trans        &trans      &trans   &trans  &trans  &trans  &trans  &trans  &trans
+   &trans      &trans        &whim_up      &trans        &trans        &out OUT_USB                       &trans  &trans  &tlm_u  &trans  &trans  &trans
+   &trans      &whim_right   &whim_down    &whim_left    &trans        &out OUT_BLE                       &trans  &tlm_r  &tlm_d  &tlm_l  &trans  &trans
+   &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans   &trans  &trans  &trans  &trans  &trans  &trans
                                           &trans  &trans  &trans  &trans  &rgb_ug RGB_TOG          &trans  &trans  &trans  &trans  &trans
          >;
 
