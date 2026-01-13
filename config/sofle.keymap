@@ -271,9 +271,7 @@
          bindings =
          <&macro_press &kp LGUI>,
          <&macro_press &kp LALT>,
-		 <&macro_tap &kp RIGHT_ARROW>,
-         <&macro_release &kp LGUI>,
-         <&macro_release &kp LALT>
+		 <&macro_tap &kp RIGHT_ARROW>
          ;
       };
                 tlm_l: macro_14
@@ -283,9 +281,7 @@
          bindings =
          <&macro_press &kp LGUI>,
          <&macro_press &kp LALT>,
-		 <&macro_tap &kp LEFT_ARROW>,
-         <&macro_release &kp LGUI>,
-         <&macro_release &kp LALT>
+		 <&macro_tap &kp LEFT_ARROW>
          ;
       };
                 tlm_u: macro_15
@@ -295,9 +291,7 @@
          bindings =
          <&macro_press &kp LGUI>,
          <&macro_press &kp LALT>,
-		 <&macro_tap &kp UP_ARROW>,
-         <&macro_release &kp LGUI>,
-         <&macro_release &kp LALT>
+		 <&macro_tap &kp UP_ARROW>
        ;
       };
                 tlm_d: macro_16
@@ -307,9 +301,7 @@
          bindings =
          <&macro_press &kp LGUI>,
          <&macro_press &kp LALT>,
-		 <&macro_tap &kp DOWN_ARROW>,
-         <&macro_release &kp LGUI>,
-         <&macro_release &kp LALT>
+		 <&macro_tap &kp DOWN_ARROW>
        ;
       };
                 whim_right: macro_17
@@ -318,8 +310,7 @@
          #binding-cells = <0>;
          bindings =
          <&macro_press &kp LGUI>,
-         <&macro_tap &kp RIGHT_ARROW>,
-         <&macro_release &kp LGUI>
+         <&macro_tap &kp RIGHT_ARROW>
        ;
       };
                 whim_left: macro_18
@@ -328,8 +319,7 @@
          #binding-cells = <0>;
          bindings =
          <&macro_press &kp LGUI>,
-         <&macro_tap &kp LEFT_ARROW>,
-         <&macro_release &kp LGUI>
+         <&macro_tap &kp LEFT_ARROW>
        ;
       };
                 whim_up: macro_19
@@ -338,8 +328,7 @@
          #binding-cells = <0>;
          bindings =
          <&macro_press &kp LGUI>,
-         <&macro_tap &kp UP_ARROW>,
-         <&macro_release &kp LGUI>
+         <&macro_tap &kp UP_ARROW>
        ;
       };
                 whim_down: macro_20
@@ -348,8 +337,7 @@
          #binding-cells = <0>;
          bindings =
          <&macro_press &kp LGUI>,
-         <&macro_tap &kp DOWN_ARROW>,
-         <&macro_release &kp LGUI>
+         <&macro_tap &kp DOWN_ARROW>
        ;
       };
     };
